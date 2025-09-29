@@ -5,7 +5,7 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[#2C5F4F] text-white py-4 px-6 sticky top-0 z-50">
+    <header className="bg-[#2C5F4F] text-white py-4 px-6 sticky top-0 z-50 border-b-[2px] border-[#6c7a76]">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="text-xl font-bold tracking-wide">Neogenesis</div>
 
@@ -17,15 +17,15 @@ const Header = () => {
           </button>
         </nav>
 
-        {/* <div className="flex items-center gap-4">
+        <div className="md:hidden flex items-center gap-4">
           <ShoppingCart className="w-5 h-5 cursor-pointer hover:opacity-75 transition" />
           <button
-            className="md:hidden"
+            className=""
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
-        </div> */}
+        </div>
       </div>
 
       {mobileMenuOpen && (
@@ -46,7 +46,7 @@ const Header = () => {
 // Hero Section
 const HeroSection = () => {
   return (
-    <section className="bg-[#2C5F4F] text-white py-16 md:py-24 px-6">
+    <section className="bg-[#2C5F4F] text-white py-10 md:py-24 px-6">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
@@ -84,7 +84,7 @@ const TrustBadges = () => {
 
   return (
     <section className="bg-[#F5F1E8] py-8 px-6">
-      <div className="max-w-5xl mx-auto flex flex-wrap justify-center items-center gap-8 md:gap-12">
+      <div className="max-w-5xl mx-auto flex flex-wrap justify-between items-center gap-10 md:gap-10">
         {features.map((feature, idx) => (
           <div key={idx} className="flex items-center gap-3 text-[#2C5F4F]">
             <span className="text-2xl">{feature.icon}</span>
@@ -133,7 +133,7 @@ const ProductDetailsSection = () => {
                 className="rounded-lg w-full h-48 object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1505944357380-7879ae21e8b7?w=300&h=200&fit=crop&q=80"
+                src="https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=300&h=200&fit=crop&q=80"
                 alt="Fresh vegetables"
                 className="rounded-lg w-full h-48 object-cover"
               />
