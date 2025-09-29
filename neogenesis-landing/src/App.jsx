@@ -7,7 +7,9 @@ const Header = () => {
   return (
     <header className="bg-[#2C5F4F] text-white py-4 px-6 sticky top-0 z-50 border-b-[2px] border-[#6c7a76]">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="text-xl font-bold tracking-wide">Neogenesis</div>
+        <div className="italic text-2xl font-extrabold tracking-wide bg-gradient-to-r from-green-300 via-teal-400 to-green-600 bg-clip-text text-transparent">
+          Neogenesis
+        </div>
 
         <nav className="hidden md:flex items-center gap-8 text-sm">
           <a href="#about" className="hover:opacity-75 transition">About Us</a>
